@@ -182,6 +182,7 @@ class TrackDetailView: UIView {
         if player.timeControlStatus == .paused {
             enlargeTrackImageView()
             player.play()
+            
             playPauseButton.setImage(UIImage(named: "pause"), for: .normal)
             miniPlayPauseButton.setImage(UIImage(named: "pause"), for: .normal)
         } else {
